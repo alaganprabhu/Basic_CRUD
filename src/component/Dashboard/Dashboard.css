@@ -1,0 +1,30 @@
+.container {
+  /* width: 90%; */
+  /* background: lightblue; */
+  display: flex;
+  justify-content: center;
+}
+.table {
+  width: 90%;
+  background: white;
+}
+
+.p-datatable .p-datatable-thead > tr > th {
+  background-color: lightslategray; /* Change this to your desired color */
+  color: white; /* Optional: Change text color for contrast */
+}
+
+.p-datatable .p-datatable-thead > tr > th,
+.p-datatable .p-datatable-tbody > tr > td {
+  width: 0%; /* Set a uniform width for all columns */
+  padding: 12px 80px; /* Add consistent padding */
+  text-align: left; /* Align text to the left */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+.p-datatable .p-datatable-tbody > tr:nth-child(odd) {
+  background-color: #f9f9f9; /* Background color for odd rows */
+}
+
+.p-datatable .p-datatable-tbody > tr:nth-child(even) {
+  background-color: #fff; /* Background color for even rows */
+}

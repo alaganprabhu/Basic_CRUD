@@ -1,0 +1,21 @@
+body {
+  background: lightblue;
+}
+.App {
+  text-align: center;
+}
+
+.screen_layout {
+  display: flex;
+}
+.body_layout {
+  width: 100%;
+  background: blueviolet;
+}
+
+@media (max-width: 500px) {
+  .screen_layout {
+    display: flex;
+    flex-direction: column;
+  }
+}

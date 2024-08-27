@@ -1,0 +1,55 @@
+/* src/components/Sidebar/Sidebar.css */
+.sidebar {
+  /* width: 100%; */
+  width: 200px;
+  height: 100vh;
+  background-color: black;
+  /* background-color: #f4f4f4; */
+  padding: 20px;
+  /* position: fixed  ; */
+  /* overflow-y: auto; */
+  display: flex;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar li {
+  margin: 20px 0;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-variant: small-caps;
+}
+.dialog {
+  width: 50%;
+}
+
+@media (max-width: 500px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+  }
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    /* justify-content: center; */
+  }
+  .sidebar li {
+    margin: 10px 0;
+  }
+}

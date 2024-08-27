@@ -1,0 +1,176 @@
+.containe {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* flex-direction: column; */
+}
+.header {
+  text-align: left;
+  padding: 15px 35px;
+  margin: 12px 15px;
+  background: black;
+  color: chartreuse;
+  font-size: 30px;
+  font-variant: small-caps;
+  /* color: black; */
+  border-radius: 10px;
+}
+.table {
+  width: 95% !important;
+  background: white;
+  margin-top: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+}
+
+.p-datatable .p-datatable-thead > tr > th {
+  background-color: lightslategray; /* Change this to your desired color */
+  color: white; /* Optional: Change text color for contrast */
+}
+
+.p-datatable .p-datatable-thead > tr > th,
+.p-datatable .p-datatable-tbody > tr > td {
+  width: 0%; /* Set a uniform width for all columns */
+  padding: 22px 80px; /* Add consistent padding */
+  text-align: left; /* Align text to the left */
+  white-space: nowrap; /* Prevent text from wrapping */
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+.p-datatable .p-datatable-tbody > tr:nth-child(odd) {
+  background-color: #f9f9f9; /* Background color for odd rows */
+}
+
+.p-datatable .p-datatable-tbody > tr:nth-child(even) {
+  background-color: #fff; /* Background color for even rows */
+}
+
+.input_section {
+  display: flex;
+  justify-content: center;
+  height: 2rem;
+  gap: 3rem;
+  width: 100%;
+}
+.inputs {
+  padding: 8px;
+  width: 200px;
+}
+.blurred {
+  filter: blur(5px);
+  pointer-events: none;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 35px;
+}
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.mobile-warning {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f44336;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.p-datatable .p-datatable-tbody > tr > td {
+  padding: 10px;
+}
+
+/* Styles for custom DataTable body */
+.custom-datatable .data-table-row {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.custom-datatable .data-table-cell {
+  margin-bottom: 10px;
+}
+/* -------------------- */
+/* Media query for screens less than 500px */
+
+.grid-view {
+  /* display: flex;
+  flex-wrap: wrap;
+  gap: 10px; */
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.grid-item {
+  border: 1px solid #ddd;
+  background: #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  /* width: calc(50% - 20px);  */
+  width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item h3 {
+  margin: 0 0 10px;
+}
+@media (max-width: 500px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    align-items: center;
+    margin-top: 4rem;
+  }
+  .dialog {
+    width: 70%;
+  }
+  .input_section {
+    display: flex;
+    flex-direction: column; /* Stack input fields vertically */
+    align-items: flex-start; /* Align items to the start */
+    gap: 1rem; /* Adjust gap between fields */
+  }
+
+  .inputs {
+    width: 90%;
+    padding: 0;
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .save {
+    padding: 5px 5px;
+  }
+  .cancel {
+    padding: 5px;
+  }
+}
